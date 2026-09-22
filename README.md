@@ -17,7 +17,9 @@ supporting artifacts are included here.
 
 ---
 
-## Featured Project — Hermes Lean Agent Team
+## Featured Projects
+
+### Hermes Lean Agent Team
 
 A validated four-agent AI engineering team built in Hermes.
 
@@ -31,3 +33,9 @@ Odin — Chief Agent / Orchestrator
   +--> Brokkr — Developer
   +--> Veritas — Independent QA
   ```
+  [View project](projects/agentic-ai-lab/hermes-team)
+
+### GitHub Portfolio Governance
+A reusable agent-assisted governance workflow for evaluating repositories, independently verifying risky changes, and requiring explicit human approval before archive, delete, rename, transfer, or visibility changes.
+
+[View project](projects/agentic-ai-lab/github-portfolio-governance)
