@@ -1,0 +1,32 @@
+diff --git a/label_tools.py b/label_tools.py
+new file mode 100644
+index 0000000..3f4b6d1
+--- /dev/null
++++ b/label_tools.py
+@@ -0,0 +1,7 @@
++import re
++
++
++def normalize_label(value: str) -> str:
++    """Return a stable lowercase label with normalized whitespace."""
++    collapsed = re.sub(r"\s+", " ", value.strip())
++    return collapsed.lower()
+diff --git a/test_label_tools.py b/test_label_tools.py
+new file mode 100644
+index 0000000..bb7f6ce
+--- /dev/null
++++ b/test_label_tools.py
+@@ -0,0 +1,13 @@
++from label_tools import normalize_label
++
++
++def test_normalize_label_trims_collapses_and_lowercases():
++    assert normalize_label("  New   Product\tLabel  ") == "new product label"
++
++
++def test_normalize_label_preserves_single_word_lowercase():
++    assert normalize_label("Widget") == "widget"
++
++
++def test_normalize_label_returns_empty_string_for_blank_input():
++    assert normalize_label(" \n\t ") == ""

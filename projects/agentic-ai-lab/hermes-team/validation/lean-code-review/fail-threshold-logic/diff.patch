@@ -1,0 +1,26 @@
+diff --git a/shipping_rules.py b/shipping_rules.py
+new file mode 100644
+index 0000000..9ce66f1
+--- /dev/null
++++ b/shipping_rules.py
+@@ -0,0 +1,5 @@
++def qualifies_for_free_shipping(total_cents: int, threshold_cents: int = 5000) -> bool:
++    """Return whether an order total is at least the free-shipping threshold."""
++    if total_cents > threshold_cents:
++        return True
++    return False
+diff --git a/test_shipping_rules.py b/test_shipping_rules.py
+new file mode 100644
+index 0000000..12cb7ad
+--- /dev/null
++++ b/test_shipping_rules.py
+@@ -0,0 +1,9 @@
++from shipping_rules import qualifies_for_free_shipping
++
++
++def test_order_above_default_threshold_qualifies():
++    assert qualifies_for_free_shipping(7500) is True
++
++
++def test_order_below_default_threshold_does_not_qualify():
++    assert qualifies_for_free_shipping(4999) is False
