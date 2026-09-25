@@ -1,17 +1,17 @@
 # GitHub Portfolio Governance
 
-A lean, documentation-first governance pattern for cleaning up a GitHub portfolio without letting agents perform destructive repository actions on their own.
+A lean, documentation-first governance pattern for cleaning up a GitHub portfolio while keeping destructive repository actions under human control.
 
 ## Problem
-A GitHub account can accumulate outdated, incomplete, course-based, redundant, or low-value repositories over time. Cleaning them up manually risks deleting useful work or making inconsistent decisions.
+A GitHub account can accumulate outdated, incomplete, course-based, redundant, or low-value repositories over time. Manual cleanup can still delete useful work or lead to inconsistent decisions.
 
 ## Goal
-Use the existing Hermes Lean Agent Team to evaluate repositories, independently verify destructive-action and visibility-changing candidates, and require explicit human approval before any deletion, archival, rename, transfer, or visibility-change action.
+Use the existing Hermes Lean Agent Team to evaluate repositories, independently verify destructive-action and visibility-changing candidates, and require explicit human approval before any deletion, archival, rename, transfer, or visibility change.
 
 ## Non-Negotiable Safety Rule
 No repository may be deleted, archived, renamed, transferred, or have visibility changed without independent verification and explicit human approval.
 
-Independent verification is required before any archive, delete, rename, transfer, or visibility change. Human approval alone is not sufficient until the independent verification record is complete.
+Independent verification is required before any archive, delete, rename, transfer, or visibility change. Human approval is not enough until the independent verification record is complete.
 
 ## Agent Workflow
 - Bao — repository inventory and evidence-based evaluation
@@ -37,7 +37,7 @@ Independent verification is required before any archive, delete, rename, transfe
 - `templates/run-log.md` — run-level audit log template
 
 ## Reusable Templates
-Use the templates in order:
+Use the templates in this order:
 
 1. `templates/repository-evaluation.md`
 2. `templates/independent-verification.md` for any ARCHIVE CANDIDATE, DELETE CANDIDATE, rename, transfer, or visibility-change candidate

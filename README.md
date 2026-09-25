@@ -3,17 +3,16 @@
 A practical AI engineering portfolio focused on agentic AI, retrieval,
 automation, evaluation, and secure AI systems.
 
-Projects in this repository are developed incrementally, validated before
-being presented as complete, and documented with both successful results
-and lessons learned.
+Projects in this repository are built incrementally, validated before they
+are presented as complete, and documented with both successful results and lessons learned.
 
 ## Repository Purpose
 
 This repository is the public-facing portfolio for validated AI engineering work.
 
-Experimental development, private research, and broader workspace activity are kept
-separately from this repository. Only reviewed, publication-ready projects and
-supporting artifacts are included here.
+Experimental development, private research, and broader workspace activity stay
+outside this repository. This repo includes only reviewed, publication-ready
+projects and supporting artifacts.
 
 ---
 

@@ -6,9 +6,9 @@ Status: concise synthesis only; no new research added
 
 ## Executive Summary
 
-AI adoption among manufacturers is increasing in 2026, but the signal is uneven across company size and maturity. Manufacturing-specific evidence shows rapid GenAI adoption, rising agentic-AI interest, and stronger middle-market integration, while the smallest firms remain behind larger businesses.[1][6][8][12] The strongest supported conclusion is not that SMB manufacturers have broadly realized AI ROI, but that many are moving from experimentation toward operational use while still facing a pilot-to-scale gap.[2][3][13]
+AI adoption among manufacturers is increasing in 2026, but the signal is uneven across company size and maturity. Manufacturing-specific evidence shows rapid GenAI adoption, rising agentic-AI interest, and stronger middle-market integration, while the smallest firms remain behind larger businesses.[1][6][8][12] The best-supported conclusion is not that SMB manufacturers have broadly realized AI ROI. It is that many are moving from experimentation toward operational use while still facing a pilot-to-scale gap.[2][3][13]
 
-Evidence gap: no single authoritative 2026 survey measures the combined segment "small and mid-sized U.S. manufacturers." The brief therefore triangulates from manufacturing surveys that skew mid-cap or large-cap, cross-industry SMB surveys, middle-market manufacturing data, and NIST MEP small-manufacturer guidance. Several manufacturing surveys cited below are global rather than U.S.-only, and are treated as approximations where U.S.-specific manufacturing data is unavailable.[4][7][13]
+Evidence gap: no single authoritative 2026 survey measures the combined segment "small and mid-sized U.S. manufacturers." This brief therefore triangulates from manufacturing surveys that skew mid-cap or large-cap, cross-industry SMB surveys, middle-market manufacturing data, and NIST MEP small-manufacturer guidance. Several manufacturing surveys cited below are global rather than U.S.-only, and are treated as approximations where U.S.-specific manufacturing data is unavailable.[4][7][13]
 
 ## Adoption Trends
 
@@ -16,7 +16,7 @@ Evidence gap: no single authoritative 2026 survey measures the combined segment 
 - Cross-industry small-business AI use rose from 23% in 2023 to 40% in 2024 and 58% in 2025, but smaller firms still lag: 43% of firms with 2–9 workers use AI for work tasks compared with 59% of firms with 100–249 workers.[8]
 - Manufacturing-specific GenAI adoption is higher: 70.9% of manufacturers report using tools such as ChatGPT or Microsoft Copilot, up from 46% in 2024, and nearly 90% plan to increase GenAI usage over the next two years.[6]
 - Agentic AI is emerging but still early. The approved research reports that 66% of manufacturers use or plan to use agentic AI in operations, while Manufacturing Leadership Council survey data cited in the research found 6% currently using agentic AI and 24% expecting to within two years.[6][9]
-- Middle-market manufacturers appear furthest along: 88% of RSM's 129 manufacturing respondents say AI is at least partially integrated, and 32% report full integration across core operations.[12]
+- Middle-market manufacturers appear to be furthest along: 88% of RSM's 129 manufacturing respondents say AI is at least partially integrated, and 32% report full integration across core operations.[12]
 
 ## Common Use Cases
 
@@ -30,7 +30,7 @@ Evidence gap: no single authoritative 2026 survey measures the combined segment 
 - Manufacturing barriers include high implementation costs, lack of technical expertise, resistance to change, regulatory/compliance concerns, data availability and quality issues, cybersecurity risk, unreliable wireless connectivity, and weak IT/OT collaboration.[4][7]
 - Middle-market manufacturers cite talent and skills gaps most often, and 65% describe their data environment as fragmented, emerging, or developing.[12]
 - Grant Thornton finds governance remains immature: 50% of manufacturers say formalizing an AI strategy or governance framework is the most important change needed in the next six months, and only 7% have a tested AI incident response plan.[2]
-- For small and mid-sized manufacturers, NIST MEP frames adoption around whether the investment is worth the price, complexity, and risk, and emphasizes relieving staff of repetitive, time-consuming tasks.[15]
+- For small and mid-sized manufacturers, NIST MEP frames adoption around whether the investment is worth the price, complexity, and risk. It also emphasizes relieving staff of repetitive, time-consuming tasks.[15]
 - The smallest firms face the highest opportunity-to-barrier gap: the Chamber report says the smallest businesses have the greatest growth opportunity and the highest potential return on targeted support.[8]
 
 ## Vendors / Platforms
@@ -63,7 +63,7 @@ These are labeled hypotheses/inference, not directly proven market-sizing claims
 - No single cited source directly measures 2026 AI adoption for "small and mid-sized U.S. manufacturers" as one segment.
 - Manufacturing surveys from Deloitte, Cisco, and Parsec are global and used only as approximations for U.S. SMB manufacturing where better segment-specific data is unavailable.[4][7][13]
 - SMB surveys from Census, the U.S. Chamber / CBIA reporting, and JPMorgan Chase are cross-industry and should not be read as manufacturing-only evidence.[1][8][14]
-- Vendor pages establish vendor product positioning and claims, not independent product effectiveness.[16][17][18][19][20]
+- Vendor pages establish product positioning and vendor claims, not independent product effectiveness.[16][17][18][19][20]
 - Pricing ranges from Layer3 Labs are one vendor's marketing figures and should be treated as indicative, not established market pricing.[10]
 
 ## Agent Workflow Evidence
@@ -74,9 +74,9 @@ These are labeled hypotheses/inference, not directly proven market-sizing claims
 
 ## Lessons Learned
 
-- Portfolio-ready market research should separate verified findings, inference, hypotheses, vendor claims, and evidence gaps rather than smoothing them into one confident narrative.
+- Portfolio-ready market research should separate verified findings, inference, hypotheses, vendor claims, and evidence gaps instead of smoothing them into one confident narrative.
 - Citation QA materially improves reliability: the approved source brief changed after prior review found citation-to-claim mismatches and insufficient qualification.
-- For thinly measured segments, the correct deliverable is a bounded synthesis with explicit limits, not a fabricated market fact.
+- For thinly measured segments, the right deliverable is a bounded synthesis with explicit limits, not a fabricated market fact.
 - Agentic workflows are strongest when research, QA, revision, and portfolio synthesis are separate steps with auditable task IDs and preserved source constraints.
 
 ## Sources

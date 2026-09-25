@@ -71,7 +71,7 @@ A diagnostic delegation from Odin showed that the child agent inherited:
 - Odin's model
 - Odin's provider
 
-The child was only instructed to act as Bao and did not load Bao's persistent SOUL/profile configuration.
+The child was instructed to act as Bao, but it did not load Bao's persistent SOUL/profile configuration.
 
 ### Architecture Correction
 
@@ -116,7 +116,7 @@ Veritas Kanban task verified:
 
 ### Lesson Learned
 
-Prompting a temporary child agent to "act as" a specialist is not equivalent to routing work to the persistent specialist profile.
+Prompting a temporary child agent to "act as" a specialist is not the same as routing work to the persistent specialist profile.
 
 Profile-specific model selection, provider selection, SOUL configuration, and environment must be verified at runtime rather than assumed.
 
@@ -194,7 +194,7 @@ Validate the lean Hermes team using persistent named profiles, Kanban routing, i
 
 - Persistent named-profile routing through Kanban successfully exercised Bao, Brokkr, Veritas, and Odin as distinct agents.
 - Independent QA adds real value even after upstream research has already passed review.
-- A downstream artifact can introduce new unsupported claims even when the source research is correct.
+- A downstream artifact can introduce unsupported claims even when the source research is correct.
 - Verification should occur both before and after artifact generation.
 - Failures should be preserved as engineering evidence rather than hidden.
 - Small targeted correction tasks are more efficient than restarting the entire workflow.
@@ -311,7 +311,7 @@ Validate the repository-managed `lean-code-review` skill as a non-modifying, low
 
 ### Key Lesson Learned
 
-Static skill validation is not sufficient when behavioral acceptance criteria require scenario testing. Skills that define review behavior need fixture-based validation against representative passing and failing diffs.
+Static skill validation is not enough when behavioral acceptance criteria require scenario testing. Skills that define review behavior need fixture-based validation against representative passing and failing diffs.
 
 ### Final Validation State
 
@@ -343,7 +343,7 @@ Nous remains available, but the validated final team uses it primarily for Bao r
 - Hermes v0.21.1 profile-scoped auth mattered: changing Odin's model/provider config alone did not make Odin runnable because Odin lacked profile-scoped `openai-codex` auth. Running `hermes -p odin setup model` created the correct profile auth and completed the migration.
 - After a Hermes update, a running gateway can continue serving pre-update modules until it is restarted.
 - `gateway.multiplex_profiles` was set to `true` so named profiles could be dispatched through the gateway.
-- Native Windows rebuild warnings are orchestration/platform lessons to document and re-validate, not hidden failures.
+- Native Windows rebuild warnings are orchestration and platform lessons to document and re-validate, not hidden failures.
 
 ### Validation Lessons Preserved
 

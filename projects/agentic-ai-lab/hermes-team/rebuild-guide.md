@@ -1,10 +1,10 @@
 # Hermes Lean Agent Team Rebuild Guide
 
-This guide rebuilds the validated four-profile Hermes team from repository files. The repository is the source of truth; do not rely on remembered UI or profile-only settings.
+This guide rebuilds the validated four-profile Hermes team from repository files. The repository is the source of truth; do not rely on remembered UI settings or profile-only state.
 
-Validated environment: native Windows with PowerShell. Commands below are PowerShell commands run from the repository root unless a section says otherwise. Git Bash equivalents may work on this machine, but the validated rebuild path is PowerShell.
+Validated environment: native Windows with PowerShell. Commands below are PowerShell commands run from the repository root unless a section says otherwise. Git Bash equivalents may work on this machine, but PowerShell is the validated rebuild path.
 
-Validated Hermes version: `Hermes Agent v0.21.1 (2026.9.7)`. Rebuild behavior, defaults, command output, and skill inventory may differ on newer Hermes versions; re-verify before treating this guide as authoritative for a later release.
+Validated Hermes version: `Hermes Agent v0.21.1 (2026.9.7)`. Rebuild behavior, defaults, command output, and skill inventory may differ on newer Hermes versions. Re-verify before treating this guide as authoritative for a later release.
 
 Source files:
 
@@ -85,7 +85,7 @@ if ($LASTEXITCODE -eq 0) { hermes -p brokkr config unset agent.max_turns }
 
 ## 3. Authenticate providers
 
-Use profile-scoped OAuth/subscription auth. Do not store credentials in repository files. Run setup/auth commands per profile; successful auth for one profile does not prove another profile can use that provider. `openai-codex` is not raw API-key usage in this rebuild.
+Use profile-scoped OAuth/subscription auth. Do not store credentials in repository files. Run setup/auth commands per profile; successful auth for one profile does not prove that another profile can use the same provider. `openai-codex` is not raw API-key usage in this rebuild.
 
 Required validated credentials:
 
@@ -147,7 +147,7 @@ During validation, Odin, Veritas, and Bao matched their repository SOUL files. B
 
 ## 4a. Install Veritas code review skill
 
-Install the repository-managed `lean-code-review` skill into the Veritas profile. This keeps Veritas' review behavior rebuildable from Git instead of relying on manual profile edits.
+Install the repository-managed `lean-code-review` skill into the Veritas profile. This keeps Veritas' review behavior rebuildable from Git instead of depending on manual profile edits.
 
 ```powershell
 $LeanReviewSkillSource = "projects\agentic-ai-lab\hermes-team\skills\software-development\lean-code-review\SKILL.md"
@@ -378,13 +378,13 @@ hermes profile show veritas
 hermes profile show bao
 ```
 
-Validated profile skill counts were 59 for Odin and 58 each for Brokkr, Veritas, and Bao. Treat those counts as a sanity check, not a substitute for reviewing the disabled skill list.
+Validated profile skill counts were 59 for Odin and 58 each for Brokkr, Veritas, and Bao. Treat those counts as a sanity check, not as a substitute for reviewing the disabled skill list.
 
 ## 6. Enable Kanban routing
 
 Persistent named-profile routing uses Hermes Kanban. Do not use `delegate_task` when the task specifically requires Brokkr, Veritas, or Bao.
 
-Reason: `delegate_task` creates a temporary child agent under the parent runtime. It does not automatically load the named specialist profile, provider, model, SOUL, memory, or profile environment.
+Reason: `delegate_task` creates a temporary child agent under the parent runtime. It does not load the named specialist profile, provider, model, SOUL, memory, or profile environment automatically.
 
 Use `delegate_task` only for lightweight temporary child agents where persistent specialist identity is not required.
 

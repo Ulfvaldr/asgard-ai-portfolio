@@ -2,7 +2,7 @@
 
 ## Goal
 
-Validate the Hermes Lean Agent Team on a realistic multi-agent workflow using persistent specialist profiles and Kanban routing.
+Validate the Hermes Lean Agent Team on a realistic multi-agent workflow with persistent specialist profiles and Kanban routing.
 
 ## Workflow
 
@@ -46,10 +46,10 @@ The demo succeeds when:
 - Bao runs as the actual Bao profile.
 - Brokkr runs as the actual Brokkr profile when implementation is required.
 - Veritas independently validates the result.
-- Odin coordinates rather than performing all specialist work itself.
+- Odin coordinates the work instead of performing every specialist step itself.
 - Kanban handoffs complete successfully.
-- Final results are reproducible.
-- Failures and limitations are documented.
+- Final results can be reproduced.
+- Failures and limitations are recorded.
 
 ## Evidence to Capture
 

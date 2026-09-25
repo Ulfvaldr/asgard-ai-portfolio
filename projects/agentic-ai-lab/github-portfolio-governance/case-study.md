@@ -11,7 +11,7 @@ The GitHub account contained a mix of:
 - duplicate projects
 - empty placeholder repositories
 
-The goal was to reduce clutter without accidentally deleting useful work.
+The goal was to reduce clutter without deleting useful work by mistake.
 
 ## Workflow
 
@@ -31,7 +31,7 @@ Bao evaluated repository purpose, originality, completeness, documentation, tech
 
 Veritas independently reviewed proposed deletion candidates before any destructive action.
 
-This caught an important difference in a private application repository that initially appeared to be duplicated by a related private repository.
+That review caught an important difference in a private application repository that initially looked duplicated by a related private repository.
 
 Bao initially classified the source repository as a DELETE CANDIDATE because its purpose appeared redundant.
 
@@ -45,7 +45,7 @@ Result:
 
 The source repository was changed from DELETE CANDIDATE to KEEP.
 
-This demonstrated why independent verification was required.
+That is why independent verification was required.
 
 ### 3. Human Approval Gate
 
@@ -73,7 +73,7 @@ Hermes reported:
 
 The task later resumed automatically and completed successfully.
 
-This provided evidence that the orchestration layer could recover from a temporary provider-capacity limitation without incorrectly recording the task as failed.
+That showed the orchestration layer could recover from a temporary provider-capacity limit without incorrectly recording the task as failed.
 
 ## Final Repository Strategy
 
@@ -101,4 +101,4 @@ This provided evidence that the orchestration layer could recover from a tempora
 - Human approval is essential for irreversible repository deletion.
 - Private repositories require authenticated inspection; public-only inventory can miss important context.
 - Provider rate limits should be treated as orchestration events, not task failures.
-- Reusing the same specialist agents across projects increases the value of reusable skills, workflows, and validation patterns.
+- The same specialist agents become more useful across projects when their skills, workflows, and validation patterns are reusable.

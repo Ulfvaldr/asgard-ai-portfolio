@@ -2,15 +2,15 @@
 
 A lean 4-agent AI engineering team built in Hermes to test practical multi-agent orchestration, cost control, independent verification, and reproducible AgentOps workflows.
 
-The project began with a larger multi-agent design that proved too complex and expensive. It was redesigned around four persistent specialist profiles — Odin, Brokkr, Veritas, and Bao — using direct routing, Kanban execution, Git-backed configuration, and independent QA.
+The project began with a larger multi-agent design that proved too complex and expensive. It was redesigned around four persistent specialist profiles: Odin, Brokkr, Veritas, and Bao. The final design uses direct routing, Kanban execution, Git-backed configuration, and independent QA.
 
-The final architecture was validated through an end-to-end Market Research Assistant workflow that included research, review, revision, artifact generation, failure detection, targeted correction, and final QA approval.
+The final architecture was validated through an end-to-end Market Research Assistant workflow covering research, review, revision, artifact generation, failure detection, targeted correction, and final QA approval.
 
 ## Problem
 
 The original experiment used a larger multi-agent structure with approximately seven agents plus coordination layers.
 
-Although functional in parts, the design introduced:
+Parts of the design worked, but it introduced:
 
 - higher latency,
 - higher model cost,
@@ -57,7 +57,7 @@ The first architecture experimented with:
 - heavier use of agent-to-agent orchestration,
 - Mixture of Agents for some decisions.
 
-This provided useful experimental evidence but proved too complex for routine use.
+That experiment produced useful evidence, but it was too complex for routine use.
 
 ## Observed Failures
 
@@ -214,7 +214,7 @@ Agents may prepare such actions but should stop before execution.
 
 The redesigned architecture was validated through a real end-to-end Market Research Assistant workflow.
 
-The demonstration exercised:
+The demonstration covered:
 
 - orchestration,
 - research,
@@ -229,7 +229,7 @@ The final validation also covered Veritas' repository-managed `lean-code-review`
 
 The workflow produced a validated research artifact and a portfolio-ready market research brief.
 
-Independent QA caught both upstream research issues and a downstream unsupported claim introduced during artifact generation. Targeted correction tasks were used instead of restarting the full workflow.
+Independent QA caught upstream research issues and a downstream unsupported claim introduced during artifact generation. Targeted correction tasks were used instead of restarting the full workflow.
 
 Final result:
 
@@ -237,7 +237,7 @@ Final result:
 
 ## Rebuild / Quick Start
 
-The Hermes team can be rebuilt from the repository without relying on manually remembered bot configuration.
+The Hermes team can be rebuilt from the repository without relying on remembered bot configuration.
 
 Core repository files:
 
@@ -272,7 +272,7 @@ The project is documented as:
 
 **Problem → First Design → Observed Failures → Redesign → Validation → Rebuild**
 
-The goal is to demonstrate engineering judgment rather than simply showcase a working demo.
+The goal is to show engineering judgment, not just a working demo.
 
 ## Status
 
