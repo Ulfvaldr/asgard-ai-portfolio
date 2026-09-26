@@ -2,9 +2,9 @@
 
 A lean 4-agent AI engineering team built in Hermes to test practical multi-agent orchestration, cost control, independent verification, and reproducible AgentOps workflows.
 
-The project began with a larger multi-agent design that proved too complex and expensive. It was redesigned around four persistent specialist profiles: Odin, Brokkr, Veritas, and Bao. The final design uses direct routing, Kanban execution, Git-backed configuration, and independent QA.
+The project started with a larger multi-agent design that proved too complex and expensive. It was redesigned around four persistent specialist profiles: Odin, Brokkr, Veritas, and Bao. The final design uses direct routing, Kanban execution, Git-backed configuration, and independent QA.
 
-The final architecture was validated through an end-to-end Market Research Assistant workflow covering research, review, revision, artifact generation, failure detection, targeted correction, and final QA approval.
+The final architecture was validated with an end-to-end Market Research Assistant workflow covering research, review, revision, artifact generation, failure detection, targeted correction, and final QA approval.
 
 ## Problem
 
@@ -45,7 +45,7 @@ Execution model:
 - Git/repository files as the source of truth,
 - human approval for destructive or high-impact actions.
 
-Validated model/provider split: Odin and Veritas use GPT-5.6 Sol through `openai-codex`, Brokkr uses GPT-5.5 through `openai-codex`, and Bao uses `deepseek/deepseek-v4-pro` through Nous. Nous remains available, but the final team uses it primarily for Bao research to reduce cost.
+Validated model/provider split: Odin and Veritas use GPT-5.6 Sol through `openai-codex`, Brokkr uses GPT-5.5 through `openai-codex`, and Bao uses `deepseek/deepseek-v4-pro` through Nous. Nous remains available, but the final team uses it mainly for Bao research to reduce cost.
 
 ## First Design
 
@@ -190,7 +190,7 @@ research/
 
 ## Reproducibility
 
-Reusable agent behavior is stored in the repository rather than relying only on manually configured Hermes profiles.
+Reusable agent behavior is stored in the repository instead of relying only on manually configured Hermes profiles.
 
 This allows the team to be:
 
@@ -208,7 +208,7 @@ Git defines the team.
 
 Human approval is required before destructive, irreversible, sensitive, financially consequential, security-sensitive, or production-impacting actions.
 
-Agents may prepare such actions but should stop before execution.
+Agents may prepare those actions but should stop before execution.
 
 ## Validation Results
 
@@ -225,7 +225,7 @@ The demonstration covered:
 - failure recovery,
 - reproducibility.
 
-The final validation also covered Veritas' repository-managed `lean-code-review` skill: it is read-only, diff-first, and behaviorally validated with one clean PASS fixture and one intentionally flawed FAIL fixture.
+The final validation also covered Veritas' repository-managed `lean-code-review` skill. It is read-only, diff-first, and behaviorally validated with one clean PASS fixture and one intentionally flawed FAIL fixture.
 
 The workflow produced a validated research artifact and a portfolio-ready market research brief.
 

@@ -3,7 +3,7 @@
 A lean, documentation-first governance pattern for cleaning up a GitHub portfolio while keeping destructive repository actions under human control.
 
 ## Problem
-A GitHub account can accumulate outdated, incomplete, course-based, redundant, or low-value repositories over time. Manual cleanup can still delete useful work or lead to inconsistent decisions.
+A GitHub account can collect outdated, incomplete, course-based, redundant, or low-value repositories over time. Manual cleanup can still delete useful work or lead to inconsistent decisions.
 
 ## Goal
 Use the existing Hermes Lean Agent Team to evaluate repositories, independently verify destructive-action and visibility-changing candidates, and require explicit human approval before any deletion, archival, rename, transfer, or visibility change.
